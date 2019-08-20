@@ -1,0 +1,9 @@
+SRC = jimmy_fallon.c
+OBJ = jimmy_fallon.o
+PROG = jimmy_fallon
+LDFLAGS = -pthread
+
+$(PROG): $(OBJ)
+	gcc $(OBJ) $(LDFLAGS) -o $(PROG)
+
+$(OBJ): $(SRC)
